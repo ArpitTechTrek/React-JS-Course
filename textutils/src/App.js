@@ -7,15 +7,14 @@ import Alert from './components/Alert';
 import {
   BrowserRouter as Router,
   Route,
-  Routes,
-  Link
+  Routes
 } from "react-router-dom";
 
 function App() {
 
   const[mode, setMode] = useState('light'); //Tells whether dark mode is enabled or not
   const[alert, setAlert] = useState(null); 
-
+  
   const showAlert = (message, type) => {
     setAlert({
       msg: message,
